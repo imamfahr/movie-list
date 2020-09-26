@@ -6,7 +6,9 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 //pages
 import Home from './pages/Home'
-import ListPage from './pages/ListPage'
+import NowPlaying from './pages/NowPlaying'
+import Upcoming from './pages/Upcoming'
+import MovieDetail from './pages/MovieDetail'
 //Components
 import Navbar from './components/Navbar'
 
@@ -17,11 +19,11 @@ function App() {
     <BrowserRouter>
 
     <Navbar />
-
     <Switch>
-      <Route exact to ='/' component={Home}/>
-      <Route to ='/ListPage' component={ListPage}/>
-
+      <Route exact path ='/' component={Home}/>
+      <Route path ='/movie/now-playing' component={NowPlaying}/>
+      <Route path ='/movie/upcoming' component={Upcoming}/>
+      <Route path ='/movie/:id' component={MovieDetail} />
     </Switch>
 
     

@@ -1,15 +1,15 @@
 export const LOGIN = 'LOGIN'
 export const LOGOUT = 'LOGOUT'
 
-export default function loginUser(){
+export function loginUser(){
     return {
         type: LOGIN,
     }
 }
 
-export default function logoutUser(){
+export function logoutUser(){
     return {
-        type:LOGOUT,
+        type: LOGOUT,
     }
 
 }

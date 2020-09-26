@@ -1,16 +1,16 @@
 import React from 'react'
-import Link from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 function Navbar() {
     return (
         <div>
-            <h1>Logo</h1>
+            <h1><Link to='/'>Logo</Link></h1>
             <ul>
                 <li>
-                    list-items
+                    <Link to ='/movie/now-playing'>Now playing</Link>
                 </li>
                 <li>
-                    Np
+                    <Link to ='/movie/upcoming'>Upcoming Movies</Link>
                 </li>
             </ul>
         </div>
