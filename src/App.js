@@ -10,7 +10,12 @@ import NowPlaying from './pages/NowPlaying'
 import Upcoming from './pages/Upcoming'
 import MovieDetail from './pages/MovieDetail'
 //Components
-import Navbar from './components/Navbar'
+import NavbarOrigin from './components/Navbar'
+
+//styling
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './pages/styling/home.css'
+import './pages/styling/nowplaying.css'
 
 
 
@@ -18,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
 
-    <Navbar />
+    <NavbarOrigin />
     <Switch>
       <Route exact path ='/' component={Home}/>
       <Route path ='/movie/now-playing' component={NowPlaying}/>

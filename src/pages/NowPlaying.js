@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
+import {Container} from 'react-bootstrap'
 
 //redux
 import { useSelector, useDispatch } from "react-redux";
@@ -19,24 +20,24 @@ function NowPlaying(props) {
 
   return (
     <div>
+      <Container>
       <div>Now Playing</div>
       {listNowPlaying !== undefined ? (
         listNowPlaying.map((item, index) => (
-          <div key={index}>
+          <div key={index} className='movieCard'>
             <p>{item.title}</p>
-            <p>{item.id}</p>
+            <img src={`http://image.tmdb.org/t/p/w185/${item.poster_path}`}/>
+            <p>{item.overview}</p>
             <button onClick={()=>history.push(`/movie/${item.id}`)}>Movie Details</button>
           </div>
         ))
       ) : (
         <h1>loading item</h1>
       )}
+      </Container>
     </div>
   );
 }
 
 export default NowPlaying;
 
-//kasih link untuk ke halaman
-//fetch api untuk specific movie
-//pasanng hasil fetch ke halaman specific
