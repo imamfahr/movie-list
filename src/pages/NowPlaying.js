@@ -4,11 +4,7 @@ import { Link, useHistory, useParams } from "react-router-dom";
 //redux
 import { useSelector, useDispatch } from "react-redux";
 import { getNowPlayingFromAPI } from "../redux/actions/nowPlayingData.actions";
-import { getMovieDetailsDataOnClick } from "../redux/actions/nowPlayingData.actions";
-import {
-  getMovieDetailData,
-  getMovieDetailsData,
-} from "../redux/reducers/movieDetails.reducers";
+
 
 function NowPlaying(props) {
   const history = useHistory();
