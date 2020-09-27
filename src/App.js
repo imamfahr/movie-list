@@ -16,6 +16,7 @@ import NavbarOrigin from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './pages/styling/home.css'
 import './pages/styling/nowplaying.css'
+import './pages/styling/moviedetail.css'
 
 
 

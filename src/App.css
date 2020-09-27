@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.oswald{
+  font-family: 'Oswald', sans-serif;
+}
+
+.poiret{
+  font-family: 'Poiret One', cursive;
+}
+
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
+.anton{
+  font-family: 'Anton', sans-serif;
+}
+
+.linkNav{
+  color: white
+}
+.linkNav:hover{
+  color: wheat
+}
+
+.logo{
+  font-size: 30px;
+}
+
+.logo:hover{
+  font-size: 30px;
+  color: aliceblue;
+
+}

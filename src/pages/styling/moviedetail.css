@@ -1,0 +1,39 @@
+.detailContainer{
+    color: blanchedalmond;
+    background-color:rgba(34, 49, 63, .8) ;
+    
+}
+
+.detailContainer{
+    padding: 20px;
+}
+
+/* .detailContainer:before{
+    opacity: 50%;
+
+} */
+
+.allBehindDetail{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.synopsis{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.movieOverview{
+    font-size: 50px;
+    color: blanchedalmond;
+}
+
+.movieTitle-det{
+    font-size: 30px;
+}
+
+.fs-20{
+    font-size: 20px;
+}
